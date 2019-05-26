@@ -2,9 +2,9 @@ function Coffee (roast, ounces) {
   this.roast = roast;
   this.ounces = ounces;
   this.getSize = function() {
-    if (ounces == 8){
+    if (this.ounces == 8){
       return "small";
-    } else if (ounces == 12) {
+    } else if (this.ounces == 12) {
       return "medium";
     } else {
       return "large";
