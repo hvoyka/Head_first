@@ -25,10 +25,18 @@ spot.bark = function() {
   console.log(this.name + " says WOOF!");
   };
 var barnaby = new Dog("Barnaby", "Basset Hound", 55);
+Dog.prototype.sitting = false;
 Dog.prototype.sit = function(){
-  console.log(this.name + " is now sitting");
+  if(this.sitting){
+    console.log(this.name + " is already sitting");
+  } else {
+    this.sitting = true;
+    console.log(this.name + " is now sitting");
+  }
+  
 }
 barnaby.sit();
+barnaby.sit()
 
 fido.bark();
 fido.run();
@@ -39,4 +47,5 @@ fluffy.wag();
 spot.bark();
 spot.run();
 spot.wag();
+spot.sit();
 spot.sit();
