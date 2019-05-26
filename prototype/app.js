@@ -88,3 +88,19 @@ scotty.stack();
 scotty.bark();
 console.log(scotty.league);
 console.log(scotty.species);
+
+if (fido instanceof Dog) {
+  console.log("Fido is a Dog");
+  }
+  if (fido instanceof ShowDog) {
+  console.log("Fido is a ShowDog");
+  }
+  if (scotty instanceof Dog) {
+    console.log("Scotty is a Dog");
+    }
+    if (scotty instanceof ShowDog) {
+    console.log("Scotty is a ShowDog");
+    }
+    console.log("Fido constructor is " + fido.constructor);
+    console.log("Scotty constructor is " + scotty.constructor);
+    
