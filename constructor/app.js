@@ -2,6 +2,13 @@ function Dog (name, breed, weight) {
   this.name = name;
   this.breed = breed;
   this.weight = weight;
+  this.bark = function() {
+    if (this.weight > 25) {
+      alert(this.name + " says Woof!");
+    } else {
+      alert(this.name + " says Yip!");
+    }
+  };
 }
 function Duck (type, canFly){
   this.type = type;
@@ -22,3 +29,6 @@ for (var i = 0; i <dogs.length; i++){
               + " is a " + size 
               + " " +dogs[i].breed);
 }
+for (var i = 0; i < dogs.length; i++) {
+  dogs[i].bark();
+  }
